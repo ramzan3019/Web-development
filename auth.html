@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login / Sign Up - Code Learning Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Code Learning Hub</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="challenges.html">LeetCode Challenges</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="auth-form">
+      <h2>Login</h2>
+      <input type="email" id="login-email" placeholder="Enter your email" required>
+      <input type="password" id="login-password" placeholder="Enter your password" required>
+      <button onclick="login()">Login</button>
+
+      <h2>Sign Up</h2>
+      <input type="email" id="signup-email" placeholder="Enter your email" required>
+      <input type="password" id="signup-password" placeholder="Enter your password" required>
+      <button onclick="signup()">Sign Up</button>
+    </section>
+  </main>
+
+  <!-- Firebase setup (copy this from your Firebase project) -->
+  <script src="script.js" type="module"></script>
+  <script>
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyDWA8RBQCVvTYnCitEb-NI6cEz7GREmrAs",
+      authDomain: "simple-website-3019.firebaseapp.com",
+      projectId: "simple-website-3019",
+      storageBucket: "simple-website-3019.appspot.com",
+      messagingSenderId: "492328176563",
+      appId: "1:492328176563:web:a9165446ed9a23161799c6",
+      measurementId: "G-6WG00ZB9JY"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
